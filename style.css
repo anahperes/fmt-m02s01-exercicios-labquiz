@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    width: 430px;
+    height: 1667px;
+    
+    text-align: center;
+}
+
+header {
+    background-color: #FDAF7B;
+
+    padding: 20px 14px;
+}
+
+#logo {
+    font-family: "Source Serif 4", serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 33px;
+    
+    color: #ffffff;
+    
+    width: 134px;
+    height: 134px;
+    
+    margin: auto;
+    padding: 34px 25px;
+    
+
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="134" height="134" viewBox="0 0 134 134" fill="none"><circle cx="67" cy="67" r="67" fill="%23401F71"/></svg>');
+    background-position: center;
+}
+
+#subheading {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 20px;
+
+
+    color: #401F71;
+}
+
+#form-cto-start {    
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#form-cto-start fieldset {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+    margin-top: 25px;
+
+    border: none;
+}
+
+#form-cto-start fieldset legend {
+    font-style: italic;
+
+    display: contents;
+
+    color: #401F71;
+}
+
+/* HIDE LABEL TEXT SO THAT IT'S NOT DISPLAYED BUT STILL WORKS FOR A11Y */
+#form-cto-start fieldset label {
+    width: 1px;
+    height: 1px;
+
+    overflow: hidden; /* HIDES THE OVERFLOW OF LABEL TEXT, THAT EXCEEDS THE TYPING AREA */
+
+    position: absolute; /* DEFINES THAT THE LABEL TEXT WILL BE POSITIONED RIGHT AT THE START OF .input-wrapper */ 
+}
+
+.input-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    text-align: center;
+
+    color:#FDAF7B;
+    
+    width: 230px;
+    height: 30px;
+
+    margin: auto; /* ALIGN INPUT TO CENTER */
+    padding: 10px;
+
+    border: none;
+    border-radius: 8px;
+    background-color: #824D74;
+}
+
+.input-text::placeholder {
+    color: #BE7B72;
+}
+
+.input-text:hover::-webkit-input-placeholder {
+    color: #FDAF7B;
+}
+
+.input-text:focus::-webkit-input-placeholder {
+    color: #FDAF7B;
+}
+
+.input-text:focus {
+    outline: 3px solid #401F71;
+}
+
+.input-text:user-invalid {
+    outline: 3px solid red;
+}
+
+#form-cto-start button {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    width: 230px;
+    height: 30px;
+    
+    margin: auto;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #401F71;
+}
+
+#form-cto-start button:hover {
+    color: #401F71;
+
+    background-color: #FFFFFF;
+}
