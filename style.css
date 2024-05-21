@@ -124,12 +124,10 @@ header {
     outline: 3px solid red;
 }
 
-#form-cto-start button {
+button {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     text-align: center;
-
-    color: #FFFFFF;
 
     width: 230px;
     height: 30px;
@@ -138,6 +136,10 @@ header {
 
     border: none;
     border-radius: 8px;
+}
+
+#form-cto-start button {
+    color: #FFFFFF;
 
     background-color: #401F71;
 }
@@ -146,4 +148,24 @@ header {
     color: #401F71;
 
     background-color: #FFFFFF;
+}
+
+#form-cto-start button:focus {
+    outline: 3px solid #ffffff;
+}
+
+#form-quiz button {
+    color: #FFFFFF;
+
+    background-color: #FDAF7B;
+}
+
+#form-quiz button:hover {
+    color: #FDAF7B;
+
+    background-color: #FFFFFF;;
+}
+
+#form-quiz button:focus {
+    outline: 3px solid #ffffff;
 }
