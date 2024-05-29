@@ -9,7 +9,7 @@
 This is Lab Quiz, an online quiz proposed as an exercise of html and css on Floripa Mais Tec course. 
 
 ## 🚀 TECH
-- [HTML]([https://www.java.com/download/help/whatis_java.html](https://html.spec.whatwg.org))
+- [HTML](https://html.spec.whatwg.org)
 - [CSS](https://www.w3.org/TR/CSS/#css)
 
 ## 🔧 TOOLS
@@ -32,7 +32,7 @@ This is Lab Quiz, an online quiz proposed as an exercise of html and css on Flor
 Este é o Lab Quiz, um questionário online proposto como exercício de html e css no curso Floripa Mais Tec.
 
 ## 🚀 TECH
-- [HTML]([https://www.java.com/download/help/whatis_java.html](https://html.spec.whatwg.org))
+- [HTML](https://html.spec.whatwg.org)
 - [CSS](https://www.w3.org/TR/CSS/#css)
 
 
