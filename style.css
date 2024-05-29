@@ -293,3 +293,25 @@ main legend {
 #form-quiz button:focus {
     outline: 3px solid #ffffff;
 }
+
+footer {
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+
+    color: #401F71;
+
+    padding: 15px 125px;
+
+    background-color: #FDAF7B;
+}
+
+footer a {
+    text-decoration-line: none;
+}
+
+footer a:visited {
+    color: inherit;
+  }
