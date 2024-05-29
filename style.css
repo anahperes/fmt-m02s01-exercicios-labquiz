@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    width: 430px;
+    height: 1667px;
+    
+    text-align: center;
+}
+
+header {
+    background-color: #FDAF7B;
+
+    padding: 20px 14px;
+}
+
+#logo {
+    font-family: "Source Serif 4", serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 33px;
+    
+    color: #ffffff;
+    
+    width: 134px;
+    height: 134px;
+    
+    margin: auto;
+    padding: 34px 25px;
+    
+
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="134" height="134" viewBox="0 0 134 134" fill="none"><circle cx="67" cy="67" r="67" fill="%23401F71"/></svg>');
+    background-position: center;
+}
+
+#subheading {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 20px;
+
+
+    color: #401F71;
+}
+
+form {    
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#form-cto-start fieldset {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+    margin-top: 25px;
+
+    border: none;
+}
+
+#form-cto-start fieldset legend {
+    font-style: italic;
+
+    display: contents;
+
+    color: #401F71;
+}
+
+/* HIDE LABEL TEXT SO THAT IT'S NOT DISPLAYED BUT STILL WORKS FOR A11Y */
+#form-cto-start fieldset label {
+    width: 1px;
+    height: 1px;
+
+    overflow: hidden; /* HIDES THE OVERFLOW OF LABEL TEXT, THAT EXCEEDS THE TYPING AREA */
+
+    position: absolute; /* DEFINES THAT THE LABEL TEXT WILL BE POSITIONED RIGHT AT THE START OF .input-wrapper */ 
+}
+
+.input-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    text-align: center;
+
+    color:#FDAF7B;
+    
+    width: 230px;
+    height: 30px;
+    
+    margin-inline: auto; /* ALIGN INPUT TO CENTER */
+    padding: 10px;
+
+    border: none;
+    border-radius: 8px;
+    background-color: #824D74;
+}
+
+.input-text::placeholder {
+    color: #BE7B72;
+}
+
+.input-text:hover::-webkit-input-placeholder {
+    color: #FDAF7B;
+}
+
+.input-text:focus::-webkit-input-placeholder {
+    color: #FDAF7B;
+}
+
+.input-text:focus {
+    outline: 3px solid #401F71;
+}
+
+.input-text:user-invalid {
+    outline: 3px solid red;
+}
+
+button {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    text-align: center;
+
+    width: 230px;
+    height: 30px;
+    
+    margin: auto;
+
+    border: none;
+    border-radius: 8px;
+}
+
+#form-cto-start button {
+    color: #FFFFFF;
+
+    background-color: #401F71;
+}
+
+#form-cto-start button:hover {
+    color: #401F71;
+
+    background-color: #FFFFFF;
+}
+
+#form-cto-start button:focus {
+    outline: 3px solid #ffffff;
+}
+
+main {
+    color: #ffffff;
+
+    padding: 20px 54px 30px;
+    
+    background-color: #401F71;
+}
+
+#form-quiz {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.answer-wrapper-horizontal, .input-wrapper-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    place-content: center;
+}
+
+.answer-wrapper-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    align-items: center;
+}
+
+main .input-text {
+    margin-top: 15px;
+}
+
+.input-radio {
+    appearance: none;
+    
+    width: 26px;
+    height: 26px;
+
+    margin-left: 20px;
+    margin-right: 10px;
+
+    border-radius: 50%;
+    
+    background-color: #824D74;
+}
+
+.input-radio:focus {
+    outline: 3px solid #FDAF7B;
+    background-color: #824D74;
+
+}
+.input-radio:checked {
+    background-color: #FDAF7B;
+    border: 5px solid #824D74;
+}
+
+.input-radio:user-invalid {
+    outline: 3px solid red;
+}
+
+fieldset {
+    border: none;
+}
+
+main legend {
+    margin-bottom: 15px;
+    border: none;
+}
+
+.checkbox-wrapper {
+    display: flex ;
+    position: relative;
+}
+
+.checkbox-wrapper input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 26px;
+    height: 26px;
+    opacity: 0%;
+}
+
+.checkbox-wrapper label {
+    display: flex;
+    gap: 8px;
+    margin: 0px;
+    align-items: center;
+}
+
+.checkbox-wrapper label::before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    background: #824D74;
+    border-radius: 5px;
+    display: block;
+}
+
+.checkbox-wrapper input:checked + label::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='16' rx='5' fill='%23FDAF7B'/%3E%3C/svg%3E%0A");
+    /* background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z' fill='%23F67669'/%3E%3C/svg%3E%0A"); */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.checkbox-wrapper input:focus + label::before {
+    outline: 3px solid #FDAF7B;
+}
+
+.checkbox-wrapper input:user-invalid + label::before {
+    outline: 3px solid red;
+}
+
+#question-7-2 ~ label {
+    margin-left: 20px;
+}
+
+#question-7-3 ~ label {
+
+    margin-left: 20px;
+}
+
+#form-quiz button {
+    color: #FFFFFF;
+
+    background-color: #FDAF7B;
+}
+
+#form-quiz button:hover {
+    color: #FDAF7B;
+
+    background-color: #FFFFFF;;
+}
+
+#form-quiz button:focus {
+    outline: 3px solid #ffffff;
+}
+
+footer {
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+
+    color: #401F71;
+
+    padding: 15px 125px;
+
+    background-color: #FDAF7B;
+}
+
+footer a {
+    text-decoration-line: none;
+}
+
+footer a:visited {
+    color: inherit;
+  }

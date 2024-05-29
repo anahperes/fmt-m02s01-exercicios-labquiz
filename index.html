@@ -3,9 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&family=Source+Serif+4:opsz,wght@8..60,700&display=swap" rel="stylesheet">
+
+    <!-- DETAILS -->
     <title>FMT - M02S01 - Exercicios</title>
 </head>
 <body>
+    <header>
+        <h1 id="logo">Lab<br>Quiz</h1>
+        <h3 id="subheading">Este é um questionário para testar os seus conhecimentos em CSS.</h3>
     
+        <form action="" id="form-cto-start">
+            <fieldset name="cto-start">
+                <legend>Vamos começar?</legend>
+                
+                <label for="nome" class="input-question">Insira o seu nome</label>
+                <input type="text" name="nome" id="nome" class="input-text" placeholder="Insira o seu nome" required>
+                
+                <button type="submit" id="submit-header">Iniciar</button>
+            </fieldset>
+        </form>
+    </header>
+
+    <main>
+        <form action="" id="form-quiz">
+            <fieldset>
+                <label for="question-1" class="input-question">Como se define um estilo inline em HTML?</label>
+                <input type="text" name="question-1" id="question-1" class="input-text" placeholder="Insira a sua resposta">
+            </fieldset>
+
+            <fieldset>
+                <legend for="question-2" class="input-question">Qual é a tag usada para criar uma lista ordenada em HTML?</legend>
+                
+                <div class="answer-wrapper-horizontal">
+                    <div class="input-wrapper-horizontal">
+                        <input type="radio" name="question-2" id="question-2-1" class="input-radio" value="ol">
+                        <label for="question-2-1">ol</label>
+                    </div>
+
+                    <div class="input-wrapper-horizontal">
+                        <input type="radio" name="question-2" id="question-2-2" class="input-radio" value="ul">
+                        <label for="question-2-2">ul</label>
+                    </div>
+                    
+                    <div class="input-wrapper-horizontal">
+                        <input type="radio" name="question-2" id="question-2-3" class="input-radio" value="li">
+                        <label for="question-2-3">li</label>
+                    </div>
+                    
+                    <div class="input-wrapper-horizontal">
+                        <input type="radio" name="question-2" id="question-2-4" class="input-radio" value="order-list">
+                        <label for="question-2-4">order-list</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend for="question-3" class="input-question">Qual propriedade CSS é usada para alterar a cor do texto?</legend>
+                <div class="answer-wrapper-vertical">
+                    <div class="input-wrapper-horizontal">
+                        <input type="radio" name="question-3" id="question-3-1" class="input-radio" value="color">
+                        <label for="question-3-1">color</la3el>
+                    </div>
+                    
+                    <div class="input-wrapper-horizontal">
+                        <input type="radio" name="question-3" id="question-3-2" class="input-radio" value="text-color">
+                        <label for="question-3-2">text-color</label>
+                    </div>
+                    
+                    <div class="input-wrapper-horizontal">
+                        <input type="radio" name="question-3" id="question-3-3" class="input-radio" value="font-color">
+                        <label for="question-3-3">font-color</label>
+                    </div>
+                    
+                    <div class="input-wrapper-horizontal">
+                        <input type="radio" name="question-3" id="question-3-4" class="input-radio" value="background-color">
+                        <label for="question-3-4">background-color</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="question-4" class="input-question">Como se referencia um arquivo CSS externo em um documento HTML?</label>
+                <input type="text" name="question-4" id="question-4" class="input-text" placeholder="Insira a sua resposta">
+            </fieldset>
+
+            <fieldset>
+                <legend for="question-5" class="input-question">Font-size é a propriedade CSS usada para alterar o tamanho da fonte de um texto?</legend>
+                
+                <div class="answer-wrapper-horizontal">
+                    <div class="input-wrapper-horizontal">
+                        <input type="radio" name="question-4" id="question-5-1" class="input-radio" value="sim">
+                        <label for="question-5-1">sim</la3el>
+                    </div>
+                    
+                    <div class="input-wrapper-horizontal">
+                        <input type="radio" name="question-4" id="question-5-2" class="input-radio" value="nao" checked required>
+                        <label for="question-5-2">não</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend class="input-question">Qual é a propriedade CSS usada para definir a largura de um elemento?</legend>
+                
+                <div class="answer-wrapper-vertical">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="question-6" id="question-6-1" class="input-checkbox" value="size">
+                        <label for="question-6-1">size</label>
+                    </div>
+                    
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="question-6" id="question-6-2" class="input-checkbox" value="width">
+                        <label for="question-6-2">width</label>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="question-6" id="question-6-3" class="input-checkbox" value="height">
+                        <label for="question-6-3">height</label>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="question-6" id="question-6-4" class="input-checkbox" value="max-width">
+                        <label for="question-6-4">max-width</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset> 
+                <legend class="input-question">Como se cria um comentário em CSS?</legend>
+                
+                <!-- verificar fonte dos inputs -->
+                <div class="answer-wrapper-horizontal">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="question-7" id="question-7-1" class="input-checkbox" value="<!-- -->">
+                        <label for="question-7-1">&lt;!-- --&gt;</label>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="question-7" id="question-7-2" class="input-checkbox" value="//">
+                        <label for="question-7-2">//</label>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="question-7" id="question-7-3" class="input-checkbox" value="/* */">
+                        <label for="question-7-3">/* */</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend class="input-question">Qual é a propriedade CSS usada para definir a altura de um elemento?</legend>
+            
+                <div class="answer-wrapper-vertical">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="question-8" id="question-8-1" class="input-checkbox" value="size">
+                        <label for="question-8-1">size</label>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="question-8" id="question-8-2" class="input-checkbox" value="height">
+                        <label for="question-8-2">height</label>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="question-8" id="question-8-3" class="input-checkbox" value="min-height">
+                        <label for="question-8-3">min-height</label>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="question-8" id="question-8-4" class="input-checkbox" value="max-height">
+                        <label for="question-8-4">max-height</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="submit" id="submit-main">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados.</p>
+        <a href="https://github.com/anahperes" target="_blank">© Ana Helena Peres 2024</a>
+    </footer>
 </body>
 </html>
